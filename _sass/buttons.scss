@@ -1,0 +1,16 @@
+.btn-primary {
+  background: $blue !important;
+  border-color: $blue !important;
+}
+
+.btn-success {
+  background: $green !important;
+  border-color: $green !important;
+}
+
+a,a.btn-link {
+  color: $blue;
+  &:hover {
+    color: darken($blue,10);
+  }
+}

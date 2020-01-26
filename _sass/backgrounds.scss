@@ -1,0 +1,23 @@
+.bg-red {
+  background: $red;
+}
+
+.bg-blue {
+  background: $blue;
+}
+
+.bg-purple {
+  background: $purple;
+}
+
+.bg-green {
+  background: $green;
+}
+
+.content-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media (min-width: 992px) {
+    padding-top: 140px;
+  }
+}

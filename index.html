@@ -1,0 +1,36 @@
+---
+layout: default
+Title: Home page | Template
+description: Description of the home page.
+permalink: /
+---
+<section id = "intro" class = "bg-primary text-light">
+  <div class = "container">
+    <div class = "row align-items-center justify-content-center">
+      <div class = "col-md-5">
+        <h1>Product Tagline</h1>
+        <p class = "lead">A short punchy description of the value proposition.</p>
+        <a class = "btn btn-light btn-lg" href = "/canvas">Call to action</a>
+      </div>
+      <div class = "col-md-7 pb-5 pt-5">
+        <img src = "http://fpoimg.com/720x480?text=Example&bg_color=ffffff" class = "img-fluid" alt ="example description">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id = "features-summary" class = "pt-5 pb-5">
+  {% include features-summary.html %}
+</section>
+
+<section id = "pricing-summary" class = "bg-light pt-5 pb-5">
+{% include pricing-summary.html %}
+</section>
+
+<section id = "offer-call-to-action" class = "bg-dark pt-5 pb-5 text-light">
+  {% include offer-call-to-action.html %}
+</section>
+
+<section id = "contact-form" class = "pt-5 pb-5">
+  {% include contact-form.html %}
+</section>

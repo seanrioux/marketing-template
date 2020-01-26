@@ -1,0 +1,37 @@
+
+iframe {
+  width: 100% !important;
+}
+
+.small-icon {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.card {
+  .price {
+      font-weight: 800;
+  }
+}
+
+/** blog **/
+.article-img {
+  max-width: 100%;
+  @media (min-width: 1200px) {
+    max-width: 1000px;
+    margin-left: -155px;
+  }
+}
+
+.articles-list {
+  a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+---
+layout: default
+Title: Blog | Template
+description: Example blog page description
+permalink: /blog/
+---
+
+<section id = "articles" class = "articles-list container pt-5 pb-5">
+  <div class = "row">
+    <div class = "col">
+      <h1 class = "mb-3">Blog</h1>
+    </div>
+  </div>
+  {% for article in site.articles %}
+    <a href = "{{ article.url }}">
+      <div class = "card mb-3">
+        <div class = "row no-gutters align-items-center">
+          <div class = "col-md-4">
+            <img class = "img-fluid" src = "{{ article.teaserImage }}" alt = "article.teaserImageAlt">
+          </div>
+          <div class = "col-md-8">
+            <div class = "card-body">
+              <h2 class = "card-title">{{ article.name }}</h2>
+              <p class = "card-text"> {{ article.abstract }}</p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </section>
+</div>
